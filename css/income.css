@@ -56,7 +56,7 @@ body::before {
     margin-bottom: 30px;
 }
 
-#taxableIncome {
+#tIncome {
     width: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@ body::before {
     transition: all 0.3s ease;
 }
 
-#taxableIncome:hover {
+#tIncome:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
