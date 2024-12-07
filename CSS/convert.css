@@ -117,24 +117,24 @@ body::before {
     font-size: 20px; 
 }
 
-.home_button {
+.back_button {
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(114, 66, 245, 0.2);
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 8px;
+    padding: 5px;
     transition: all 0.3s ease;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.home_button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.back_button:hover {
+    background-color: rgba(114, 66, 245, 0.2);
     transform: scale(1.05);
 }
 
-.home_button:active {
+.back_button:active {
     transform: scale(0.95);
 }
 
