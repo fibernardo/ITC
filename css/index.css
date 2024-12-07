@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url("Creative_Folder/mesh-gradient-background.jpg");
+    background-image: url('assets/blue.jng');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
