@@ -30,7 +30,7 @@ body::before {
 
 .Header1 {
     text-align: center; /* Center the text */
-    color: white;
+    color: black;
     margin: 5px 0; /* Set top and bottom margin to 10px */
     font-size: 2.2rem;
     position: relative;
@@ -39,7 +39,7 @@ body::before {
 }
 
 .login-box {
-    background-color: #000000;
+    background-color: black;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
@@ -73,7 +73,7 @@ body::before {
 .continue-box a {
     display: block;
     padding: 8px;
-    color: white;
+    color: #000000;
     text-align: center;
     text-decoration: none;
 }
