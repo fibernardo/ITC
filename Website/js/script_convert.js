@@ -1,34 +1,31 @@
-document.querySelector("#convert").addEventListener("click", () => {
-    const num1 = parseFloat(document.getElementById("inputv").value);
-    const operation = document.getElementById("operation").value;
-	
-            if (isNaN(inputValue)) {
-                resultDiv.textContent = 'Please enter a valid number';
-                return;
-            }
+function convert() {
+    const inputValue = parseFloat(document.getElementById('inputValue').value);
+    const conversionType = document.getElementById('conversionType').value;
+    let result;
 
-            let result;
-            let unit;
+    if (isNaN(inputValue)) {
+        alert('Please enter a valid number');
+        return;
+    }
 
-            switch(conversionType) {
-                case 'FtoC':
-                    result = ((inputv - 32) * 5/9).toFixed(2);
-                    unit = '°C';
-                    break;
-                case 'CtoF':
-                    result = ((inputv * 9/5) + 32).toFixed(2);
-                    unit = '°F';
-                    break;
-                case 'MtoF':
-                    result = (inputv * 3.28084).toFixed(2);
-                    unit = 'ft';
-                    break;
-                case 'FtoM':
-                    result = (inputv / 3.28084).toFixed(2);
-                    unit = 'm';
-                    break;
-            }
+    switch (conversionType) {
+        case 'ftoc':
+            result = (inputValue - 32) * 5/9;
+            result = result.toFixed(2) + '°C';
+            break;
+        case 'ctof':
+            result = (inputValue * 9/5) + 32;
+            result = result.toFixed(2) + '°F';  
+            break;
+        case 'mtof':
+            result = inputValue * 3.28084;
+            result = result.toFixed(2) + ' feet';
+            break;
+        case 'ftom':
+            result = inputValue / 3.28084;
+            result = result.toFixed(2) + ' meters';
+            break;
+    }
 
-            resultsDiv.innerHTML =
-				`${inputv} converted to ${result}${unit}`;
-        }
+    document.getElementById('result').innerHTML = `Result: ${result}`;
+}
