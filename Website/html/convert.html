@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Conversion Calculator</title>
-	<link rel="stylesheet" href="CSS/style_convert.css">
-    <script src="JS/script_convert.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="conversion.css">
 </head>
 <body>
-    <h1>Unit Converter</h1>
-    
-    <select id="conversionType">
-        <option value="FtoC">Fahrenheit to Celsius</option>
-        <option value="CtoF">Celsius to Fahrenheit</option>
-        <option value="MtoF">Meters to Feet</option>
-        <option value="FtoM">Feet to Meters</option>
-    </select>
-
-    <input type="number" id="inputValue" placeholder="Enter value to convert">
-    
-    <button onclick="convert()">Convert</button>
-    
-    <div id="result"></div>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="input-group">
+            <label for="inputValue">Enter Value:</label>
+            <input type="number" id="inputValue" step="any" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="conversionType">Select Conversion:</label>
+            <select id="conversionType">
+                <option value="ftoc">Fahrenheit to Celsius</option>
+                <option value="ctof">Celsius to Fahrenheit</option>
+                <option value="mtof">Meters to Feet</option>
+                <option value="ftom">Feet to Meters</option>
+            </select>
+        </div>
+        
+        <button onclick="convert()">Convert</button>
+        
+        <div id="result"></div>
+    </div>
+    <script src="conversion.js"></script>
 </body>
 </html>
