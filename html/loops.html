@@ -2,43 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N Number Calculations</title>
     <link rel="stylesheet" href="css/loops.css">
-    <script src="js/loops.js" defer></script>
 </head>
 <body>
-    <main class="wrapper">
-        <div class="interaction-box">
-            <h1 class="Header1">N Number Calculations</h1>
-            <div class="conversion-box">
-                <label for="operation">Find the?</label>
-                <select id="operation" required>
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="Fact">Factorial</option>
-                    <option value="Sum">Sum</option>
-                    <option value="Ave">Average</option>
-                </select>
-                <p clss="conversion-separator"> of </p>
-                
-                <div class="input-group">
-                    <label class="label" for="num1">Enter a number:</label>
-                    <input type="number" class="number-input" id="num1" step="any" required>
-                </div>
+    <div class="container">
+        <h1>Factorial, Sum, and Average Calculator</h1>
 
-                <div class="input-group">
-                    <label class="label" for="result">Result:</label>
-                    <input type="number" class="number-input" id="result" step="any" readonly>
-                </div>
-                <button class="button" id="calculate">Calculate</button>
-            </div>
- 
-            <a class="back_button" href="index.html">Back</a>
+        <div class="input-section">
+            <label for="n-value">Enter an integer value n:</label>
+            <input type="number" id="n-value" min="1" placeholder="Enter a number" required>
+            <button id="calculate-btn">Calculate</button>
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; Bernardo, 2024</p>
-    </footer>
+        <div id="results">
+            <p id="factorial-result">Factorial of n:</p>
+            <p id="sum-result">Sum of first n numbers:</p>
+            <p id="average-result">Average of first n numbers:</p>
+        </div>
+    </div>
+
+    <script src="js/loops.js"></script>
 </body>
 </html>
-
