@@ -4,13 +4,13 @@ document.querySelector("#convert").addEventListener("click", () => {
 
     let result;
 
-    if (operation == "CTF") {
+    if (operation == "C2F") {
         result = (num1 * 9/5) + 32;
-    } else if (operation == "FTC") {
+    } else if (operation == "F2C") {
         result = (num1 - 32) * 5/9;
-    } else if (operation == "MTF") {
+    } else if (operation == "M2F") {
         result = num1 * 3.28084;
-    } else if (operation == "FTM") {
+    } else if (operation == "F2M") {
         result = num1 / 3.28084;
     }
 
