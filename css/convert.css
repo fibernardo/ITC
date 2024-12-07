@@ -51,7 +51,7 @@ body::before {
 }
 
 .interaction-box {
-    background-color: #000000;
+    background-color: #301934;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
